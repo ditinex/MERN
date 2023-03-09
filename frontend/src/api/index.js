@@ -12,7 +12,7 @@ const API = {
   getName: async () => {
     let response = null;
     try {
-      response = await api.get("");
+      response = await api.get("/");
     } catch (e) {
       response = e;
     }
