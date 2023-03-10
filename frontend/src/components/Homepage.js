@@ -27,7 +27,7 @@ const Homepage = () => {
               </h3>
             </div>
             <p className="flex justify-center items-center font-bold text-2xl py-3 bg-gradient-to-r from-indigo-500 via-sky-500 to-teal-400 text-transparent bg-clip-text">
-              {name?.Name}
+              {name?.name}
             </p>
             <p className="fomt-semibold text-md text-gray-500 pb-5">
               Thanks for completing the Course.

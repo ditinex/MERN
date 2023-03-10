@@ -19,7 +19,7 @@ if (
 
 const dB = mysql.createConnection({
   host: process.env.HOST,
-  port: process.env.PORT,
+  port: process.env.DB_PORT,
   user: process.env.USER,
   password: process.env.PASSWORD,
   database: process.env.DATABASE,
@@ -36,8 +36,8 @@ dB.connect((error) => {
 
 app.get("/", async (req, res) => {
   res.status(200).json({
-    Name: process.env.NAME,
+    name: process.env.NAME,
   });
 });
 
-app.listen(1337);
+app.listen(process.env.URL_PORT);
